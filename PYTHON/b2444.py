@@ -1,6 +1,8 @@
 # 별찍기
-a = int(input())
-b = a - 1
+n = int(input())
 
-for i in range(1, a + 1):
-    print(i)
+for i in range(1, n):
+    print(" " * (n - i) + "*" * (2 * i - 1))
+
+for i in range(n, 0, -1):
+    print(" " * (n - i) + "*" * (2 * i - 1))
